@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 100vh;
+	display: table;
+	background-image: url('../images/NY2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%,-50%);
+	width: 70%;
+
+}
+
+path{
+	stroke: #fff;
+	fill: #fff;
+	stroke-dasharray: 800;
+	opacity: 10;
+	
+
+	animation: animate 4s cubic-bezier(.63,.16,.95,.28);
+}
+
+@keyframes animate{
+	0%{
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 800;
+
+	}
+
+	30%{
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset: 800;
+
+	}
+
+	90%{
+		
+		fill: rgba(255,255,255,0);
+	}
+
+	100%{
+		
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+		
+	}
+}
